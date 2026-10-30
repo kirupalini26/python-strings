@@ -1,0 +1,192 @@
+#1 Length of a string
+Take a string from the input and print the length of that string
+
+a=input()
+print(len(a))
+
+#2 Join the strings
+Take two strings from the input, join those two strings with a space and print the new string
+
+a=input()
+b=input()
+print(a+" "+b)
+
+#3 Compare the Strings
+Take two strings from the input and print whether or not the strings are equal
+
+a=input()
+b=input()
+if a==b:
+  print("true")
+else:
+  print("false")
+
+#4  First character of a string
+Take a string from the input and print the first character of that string
+
+a=input()
+print(a[0])
+
+#5 Last character of a string
+Take a string from the input and print the last character of that string
+
+a=input()
+print(a[-1])
+
+#6 Join first & last characters of a string
+Take a string from the input and print the first character and last characters of the string together
+
+a=input()
+print(a[0]+a[-1])
+
+#7 Alphanumeric strings
+Take a string from the input and check whether or not it contains both letters and numerals
+
+a=input()
+le=num=False
+for i in a:
+  if i.isalpha():
+    le=True
+  elif i.isdigit():
+    num=True
+if le and num:
+  print("true")
+else:
+  print("false")
+
+#8 Uppercase check
+Take a string from the input and check all the letters in the string are of upper case
+
+a=input()
+if a.isupper():
+  print("true")
+else:
+  print("false")
+
+#9 Lowercase check
+Take a string from the input and check all the letters in the string are of lower case
+
+a=input()
+if a.islower():
+  print("true")
+else:
+  print("false")
+
+#10 String lengths equal or not
+Take two strings from the input and check the lengths of those strings equal or not
+
+a=input()
+b=input()
+if (len(a)==len(b)):
+  print("true")
+else:
+  print("false")
+
+
+#11 Reverse a string
+Take a string from the input and print it in reverse
+
+
+a=input()
+print(a[::-1])
+
+
+#12 Split strings by comma
+Take a string from the input and split the strings with comma. Print the new strings one per line
+
+a = input()
+for i in a.split(","):
+    print(i)
+
+#13  Remove vowels
+Take a string from the input and remove the vowels and print it
+
+
+a=input()
+b="AEIOUaeiou"
+for i in a:
+  if i not in b:
+    print(i,end="")
+
+#14  Reverse the character case
+Take a string from the input and change lowercase characters to uppercase and uppercase characters to lowercase
+
+a=input()
+print(a.swapcase())
+
+#15 Print ascii value
+Take a string from the input and print ascii character
+
+
+a=input()
+print(ord(a))
+
+
+#16 Remove occurrences of a char
+Take a string from the input and remove all occurrences of given char from that string
+
+
+a=input()
+b=input()
+print(a.replace(b,""))
+
+
+#17 Search for a word
+Search a word existence inside a given string
+
+
+a=input()
+b=input()
+if b in a:
+  print("true")
+else:
+  print("false")
+
+
+#18 Anagram check
+Check the given 2 strings are anagrams.
+
+Hint: anagram means the strings contains same characters but order of characters is not important
+
+Note: Ignore considering the case or spaces.
+
+a=input()
+b=input()
+a=a.replace(" ","").upper()
+b=b.replace(" ","").upper()
+if sorted(a)==sorted(b):
+  print("true")
+else:
+  print("false")
+
+
+#19 Palindrome check
+Check whether or not the given string is a palindrome
+
+
+a=input()
+b=a[::-1]
+if a==b:
+  print("true")
+else:
+  print("false")
+
+
+#20 Count vowels and consonants
+Count the total vowels and consonants in a given string and print them
+
+
+s = input()
+
+vowels = 0
+consonants = 0
+
+for ch in s.lower():
+    if ch.isalpha():
+        if ch in "aeiou":
+            vowels += 1
+        else:
+            consonants += 1
+
+print(vowels)
+print(consonants)
